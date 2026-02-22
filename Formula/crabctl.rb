@@ -5,22 +5,22 @@
 class Crabctl < Formula
   desc "Manage Claude Code sessions in tmux"
   homepage "https://github.com/curusarn/crabctl"
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/curusarn/crabctl/releases/download/v0.1.3/crabctl_0.1.3_darwin_amd64.tar.gz"
-      sha256 "c068f688cc6b1819baa43d70f8aff45f7a0ae1ebfe5f7bc5e96006be8f08b74d"
+      url "https://github.com/curusarn/crabctl/releases/download/v0.1.4/crabctl_0.1.4_darwin_amd64.tar.gz"
+      sha256 "c095a1eca60bc1aa523766341ff80b58525b15eddb461a012af35e515bd3b337"
 
-      def install
+      define_method(:install) do
         bin.install "crabctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/curusarn/crabctl/releases/download/v0.1.3/crabctl_0.1.3_darwin_arm64.tar.gz"
-      sha256 "60423b8d5cb5cc451b344e05c84cbb1b0816ef8f9dabb2dab2eef434f0721165"
+      url "https://github.com/curusarn/crabctl/releases/download/v0.1.4/crabctl_0.1.4_darwin_arm64.tar.gz"
+      sha256 "a3ca021268a4900b29eec5b97174e9eddbd947346322b67b2bfa3437222f9e6c"
 
-      def install
+      define_method(:install) do
         bin.install "crabctl"
       end
     end
@@ -28,16 +28,16 @@ class Crabctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/curusarn/crabctl/releases/download/v0.1.3/crabctl_0.1.3_linux_amd64.tar.gz"
-      sha256 "cadc63a402f6d916d889ba7bfc4becf7c3bfe3b1c92c720d8cf916b838ed0c74"
-      def install
+      url "https://github.com/curusarn/crabctl/releases/download/v0.1.4/crabctl_0.1.4_linux_amd64.tar.gz"
+      sha256 "40a6db977fa03a9ec9a8390103c3dc9818c67168da2fd469c9b798a5aa33deec"
+      define_method(:install) do
         bin.install "crabctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/curusarn/crabctl/releases/download/v0.1.3/crabctl_0.1.3_linux_arm64.tar.gz"
-      sha256 "f0e83e8d6acf31ed08352ea2d924318dc53a810c027514f6f8dfa99eda6539e4"
-      def install
+      url "https://github.com/curusarn/crabctl/releases/download/v0.1.4/crabctl_0.1.4_linux_arm64.tar.gz"
+      sha256 "91e1fdc56152ac834053ac2970ea543e76f755ecad6e5dc2e57c09cad4188167"
+      define_method(:install) do
         bin.install "crabctl"
       end
     end
