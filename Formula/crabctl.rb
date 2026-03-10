@@ -5,20 +5,20 @@
 class Crabctl < Formula
   desc "Manage Claude Code sessions in tmux"
   homepage "https://github.com/curusarn/crabctl"
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/curusarn/crabctl/releases/download/v0.2.1/crabctl_0.2.1_darwin_amd64.tar.gz"
-      sha256 "1d1e14a641a1f90b8d340ed69eed4dc3ad596826a5478b3284e5be381797cb21"
+      url "https://github.com/curusarn/crabctl/releases/download/v0.2.2/crabctl_0.2.2_darwin_amd64.tar.gz"
+      sha256 "6b6af8c0fe09388e8231f8b9efec6374916a777bcd112607a5d7f14630426d87"
 
       define_method(:install) do
         bin.install "crabctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/curusarn/crabctl/releases/download/v0.2.1/crabctl_0.2.1_darwin_arm64.tar.gz"
-      sha256 "b63133525d6d33ba887905e489b7c4b03d5ea27bb63dc6bb5c5fe7f2ac794fd6"
+      url "https://github.com/curusarn/crabctl/releases/download/v0.2.2/crabctl_0.2.2_darwin_arm64.tar.gz"
+      sha256 "b23e7adcd09dc9ee409647a79e9b53df61f3becea98cb43a39a7e8b76ea92683"
 
       define_method(:install) do
         bin.install "crabctl"
@@ -28,15 +28,15 @@ class Crabctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/curusarn/crabctl/releases/download/v0.2.1/crabctl_0.2.1_linux_amd64.tar.gz"
-      sha256 "404169740cf35283616aaab52e501f62c280e1e43c02ef4c8ef388a69764e4d9"
+      url "https://github.com/curusarn/crabctl/releases/download/v0.2.2/crabctl_0.2.2_linux_amd64.tar.gz"
+      sha256 "81f63fb34cf799d4d3c24aa1252e06ef85a7f79556455f080cd2a9c4fbc4e56b"
       define_method(:install) do
         bin.install "crabctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/curusarn/crabctl/releases/download/v0.2.1/crabctl_0.2.1_linux_arm64.tar.gz"
-      sha256 "8b276181bd4c99d6c0461edb65f88ed191e8032377803df964f9acd547dcf78a"
+      url "https://github.com/curusarn/crabctl/releases/download/v0.2.2/crabctl_0.2.2_linux_arm64.tar.gz"
+      sha256 "e68742e573b3147dd45da0ef1395bea01b70315807eb3816cc331010b808ffbf"
       define_method(:install) do
         bin.install "crabctl"
       end
