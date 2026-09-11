@@ -5,20 +5,20 @@
 class ClaudeLimits < Formula
   desc "Claude usage limits for multiple accounts, side by side"
   homepage "https://github.com/curusarn/claude-limits"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/curusarn/claude-limits/releases/download/v0.1.0/claude-limits_0.1.0_darwin_amd64.tar.gz"
-      sha256 "9cd434952dde179efb97be50de519cc26128d58c0cb9884ccd1637b2404787ca"
+      url "https://github.com/curusarn/claude-limits/releases/download/v0.2.0/claude-limits_0.2.0_darwin_amd64.tar.gz"
+      sha256 "3620dfd9aa29d6f52a53aff00afcc9f463ce0629eb6c5b59f89b91a351de21f7"
 
       define_method(:install) do
         bin.install "claude-limits"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/curusarn/claude-limits/releases/download/v0.1.0/claude-limits_0.1.0_darwin_arm64.tar.gz"
-      sha256 "d4d4554762862f118604d2119ec33e9d92bb41e3b162d7bcd3ff8dc0379fb406"
+      url "https://github.com/curusarn/claude-limits/releases/download/v0.2.0/claude-limits_0.2.0_darwin_arm64.tar.gz"
+      sha256 "32622e5e34b88cd9f2196c8285803a22b58a6bb8b715db8a927da6b48cd18931"
 
       define_method(:install) do
         bin.install "claude-limits"
@@ -28,15 +28,15 @@ class ClaudeLimits < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/curusarn/claude-limits/releases/download/v0.1.0/claude-limits_0.1.0_linux_amd64.tar.gz"
-      sha256 "6205bfb094327d4758374a079e316962c18ac56c7f57fc6bb8eeaaf8bee336ae"
+      url "https://github.com/curusarn/claude-limits/releases/download/v0.2.0/claude-limits_0.2.0_linux_amd64.tar.gz"
+      sha256 "ce740b8df8f95c59bdddc54d0578fbc79744fdb9b41ef5044d294610bfd157d8"
       define_method(:install) do
         bin.install "claude-limits"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/curusarn/claude-limits/releases/download/v0.1.0/claude-limits_0.1.0_linux_arm64.tar.gz"
-      sha256 "731d21cfd3331d18ae03d9fcf957e59b3651f73cc7f3be0a73466d9f56e88c24"
+      url "https://github.com/curusarn/claude-limits/releases/download/v0.2.0/claude-limits_0.2.0_linux_arm64.tar.gz"
+      sha256 "6466455b06ec34ad0efc1609ba2bfec020ef726df873a353cf22dd8fd2eb79b5"
       define_method(:install) do
         bin.install "claude-limits"
       end
